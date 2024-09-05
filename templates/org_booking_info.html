@@ -1,0 +1,38 @@
+
+{% extends "org_layout.html" %}
+
+{% block content %}  
+
+
+<div class="container w-50 p-5 mt-5 rounded shadow-lg mybg">
+  <table class="table table-info table-hover">
+    <thead>
+      <tr>
+        <th scope="col">User ID</th>
+        <th scope="col">CUser Name</th>
+        <th scope="col">User Mobile</th>
+        <th scope="col">Person</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Booking Date</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in record %}
+      <tr>
+        <td>{{ r[0] }}</td>
+        <td>{{ r[1] }}</td>
+        <td>{{ r[2] }}</td>
+        <td>{{ r[3] }}</td>
+        <td>{{ r[4] }}</td>
+        <td>{{ r[5] }}</td>
+        <td>{{ r[6] }}</td>
+        <td>{{ r[7] }}</td>
+      </tr>
+      {% endfor  %}
+    </tbody>
+  </table>
+</div>
+   
+{% endblock %}
+    
